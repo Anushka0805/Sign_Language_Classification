@@ -8,6 +8,8 @@ We used a [dataset] (https://www.kaggle.com/ahmedkhanak1995/sign-language-gestur
 - The model was then compiled using the 'adam' optimizer. The model, with a batch size of 128, was trained on 44,000 images for 10 epochs. It resulted in a training accuracy of 0.9148 and validation accuracy of 0.9995.
 - The model was also evaluated on the testing data. It churned out an accuracy of 0.9996.
 - Images of some of the gestures were obtained from Google. They were resized, masked and fed as inputs to the model for predictions. The results (model's predictions) along with the various images that were used, are given below.
+
+
 ![output 1](/outputs/1.png)
 ![output 2](/outputs/2.png)
 ![output 2](/outputs/3.png)
