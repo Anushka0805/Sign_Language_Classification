@@ -1,9 +1,10 @@
 # Sign Language Classification
-Welcome to our project. The main motivation behind this project is the benefits it provides by bridging the gaps in communication.
+Welcome to our project. The main motivation behind this project is the benefits it provides by bridging the gaps in communication for people with hearing or speech related disabilities. The project aims to successfully translate input images of sign language gestures to the respective alphabets or numbers.
 
 ![American Sign Language](/outputs/asl.png)
 
-We used a dataset containing sign language gestures (https://www.kaggle.com/ahmedkhanak1995/sign-language-gesture-images-dataset) from Kaggle. It consists of various American Sign Language gestures. It adds up to 55500 images belonging to **37 classes** of alphabets and numbers.
+We used a dataset (https://www.kaggle.com/ahmedkhanak1995/sign-language-gesture-images-dataset) from Kaggle. It consists of various American Sign Language gestures. It adds up to 55500 images belonging to **37 classes** of alphabets and numbers.
+The model has also been successfully implemented on Streamlit, an open source Python library which is used for building custom web apps and deploying machine learning models.
 
 - We used the images in the folder called 'Gesture Image Pre-Processed Data' which consists of masked and preprocessed images of dimensions (50,50,3)
 - The data was split into necessary parts; training, validation and testing, so that the model can be evaluated correctly.
