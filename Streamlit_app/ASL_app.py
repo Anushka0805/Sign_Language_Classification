@@ -56,7 +56,7 @@ elif c=='App':
         st.write('Running predictions...')
         ynew=np.argmax(new_pred, axis=-1)
 
-        #assign the classes
+        #assign the classes for alphabets and numbers
         if(ynew>=10):
             if (ynew==10):
                 ynew='A'
