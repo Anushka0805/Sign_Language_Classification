@@ -1,6 +1,9 @@
 # Sign Language Classification
-The main motivation for this project is to be able to help people.
-We used a [dataset] (https://www.kaggle.com/ahmedkhanak1995/sign-language-gesture-images-dataset) from Kaggle which consists of various American Sign Language gestures. It adds up to 55500 images belonging to **37 classes** of alphabets and numbers.
+Welcome to our project. The main motivation behind this project is the benefits it provides by bridging the gaps in communication.
+
+![American Sign Language](/outputs/asl.png)
+
+We used a dataset containing sign language gestures (https://www.kaggle.com/ahmedkhanak1995/sign-language-gesture-images-dataset) from Kaggle. It consists of various American Sign Language gestures. It adds up to 55500 images belonging to **37 classes** of alphabets and numbers.
 
 - We used the images in the folder called 'Gesture Image Pre-Processed Data' which consists of masked and preprocessed images of dimensions (50,50,3)
 - The data was split into necessary parts; training, validation and testing, so that the model can be evaluated correctly.
