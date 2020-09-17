@@ -1,9 +1,9 @@
 # Sign Language Classification
-Welcome to our project. The main motivation behind this project is the benefits it provides by bridging the gaps in communication for people with hearing or speech related disabilities. The project aims to successfully translate input images of sign language gestures to the respective alphabets or numbers.
+Welcome to our project. The main motivation behind this project is the benefit it provides by bridging the gaps in communication for people with hearing or speech related disabilities. The project aims to successfully translate input images of sign language gestures to the respective alphabets or numbers.
 
 ![American Sign Language](/outputs/asl.png)
 
-We used a dataset (https://www.kaggle.com/ahmedkhanak1995/sign-language-gesture-images-dataset) from Kaggle. It consists of various American Sign Language gestures. It adds up to 55500 images belonging to **37 classes** of alphabets and numbers.
+We used a dataset (https://www.kaggle.com/ahmedkhanak1995/sign-language-gesture-images-dataset) from Kaggle. It consists of various American Sign Language gestures. It adds up to 55500 images belonging to **37 classes** of alphabets, digits and " _ ".
 The model has also been successfully implemented on Streamlit, an open source Python library which is used for building custom web apps and deploying machine learning models.
 
 - We used the images in the folder called 'Gesture Image Pre-Processed Data' which consists of masked and preprocessed images of dimensions (50,50,3)
@@ -19,3 +19,14 @@ The model has also been successfully implemented on Streamlit, an open source Py
 ![output 2](/outputs/3.png)
 ![output 2](/outputs/4.png)
 ![output 2](/outputs/5.png)
+
+## To run the code:
+Download the dataset from the Kaggle link and unzip it.
+
+In Sign_Language_Classification.py, provide the path to 'Gesture Image Pre-Processed Data' in 'inpath' and set 'outpath' to the path to the new folder for storing all the images in one place. (We have called the folder 'dataset').  
+
+Make sure SL_model.h5 is in the same folder as the rest of the files and the new folder.
+
+Next, provide the path to the image you want to test and set 'path' to it.
+
+Run Sign_Language_Classification.py
