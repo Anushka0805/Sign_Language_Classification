@@ -6,7 +6,7 @@ Welcome to our project. The main motivation behind this project is the benefit i
 We used a dataset (https://www.kaggle.com/ahmedkhanak1995/sign-language-gesture-images-dataset) from Kaggle. It consists of various American Sign Language gestures. It adds up to 55500 images belonging to **37 classes** of alphabets, digits and " _ ".
 The model has also been successfully implemented on Streamlit, an open source Python library which is used for building custom web apps and deploying machine learning models. The Streamlit app has been demonstrated below:
 
-![American Sign Language App Demo](/outputs/ASL_app_demo.mp4)
+![American Sign Language App Demo](ASL_git.gif)
 
 - We used the images in the folder called 'Gesture Image Pre-Processed Data' which consists of masked and preprocessed images of dimensions (50,50,3)
 - The data was split into necessary parts; training, validation and testing, so that the model can be evaluated correctly.
