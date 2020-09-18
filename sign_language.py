@@ -31,7 +31,7 @@ def imgtoarr(inpath, outpath):
   else:    
           print("Directory " , folder ,  " already exists")
 
-    #to move all images into one single folder
+  #to move all images into one single folder
   k=0
   for j in ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','_']:
     for i in range (1,1501):
@@ -73,6 +73,7 @@ def imgtoarr(inpath, outpath):
       
   print("All images have been converted to arrays!")
   return (dataset, labels)
+
 #to convert to one hot encoding
 def convert_to_one_hot(Y, C):
     Y = np.eye(C)[Y.reshape(-1)].T
@@ -81,7 +82,7 @@ def convert_to_one_hot(Y, C):
 
 def split_data(inpath, outpath):
   dataset, labels=imgtoarr(inpath, outpath)
-#Splitting into train, val and test 
+ #Splitting into train, val and test 
   x_train, x_test, y_train, y_test = train_test_split(dataset, labels, test_size=0.2, random_state=33)
   x_test, x_val, y_test, y_val = train_test_split(x_test, y_test, test_size=0.5, random_state=33)
   print("Train set size: {0}, Val set size: {1}, Test set size: {2}".format(len(x_train), len(x_val), len(x_test)))
@@ -93,7 +94,7 @@ def split_data(inpath, outpath):
   X_train = x_train/255.
   X_test = x_test/255.
   X_val = x_val/255.
-#one hot encoding
+ #one hot encoding
   Y_train = convert_to_one_hot(y_train_orig, 37).T
   Y_test = convert_to_one_hot(y_test_orig, 37).T
   Y_val = convert_to_one_hot(y_val_orig, 37).T
@@ -119,7 +120,7 @@ def predict_img_data(path, model):
   #resizing
   resized = cv2.resize(mask, (50,50))
 
-#convert to array
+ #converting to array
   test = img_to_array(resized)
 
   eg = np.ndarray(shape=(1, 50, 50, 1),
@@ -187,14 +188,14 @@ def predict_img_data(path, model):
   elif (ynew==36):
       ynew='_'
 
-  
+  #display the original image
   print("input image")
   pyplot.imshow(img)
   pyplot.show
-  
+  #display the mask
   print("resized mask of the input image")
   pyplot.imshow(resized)
   pyplot.show
-  
+  #display the predicted class of the input image
   print("Prediction=%s" % (ynew))
   
